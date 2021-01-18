@@ -19,7 +19,7 @@ Siga os seguintes passos:
 * [NPM](https://www.npmjs.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Chartist](http://gionkunz.github.io/chartist-js/)
-* [MirajeJS](https://miragejs.com/)
+* [MirageJS](https://miragejs.com/)
 
 ## 🎁 Muito Obrigado!
 
