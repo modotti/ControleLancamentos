@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #2a333d;
+  background: rgb(138, 148, 163);
+  background: linear-gradient(354deg, rgba(138, 148, 163, 1) 0%, rgba(199, 205, 222, 1) 100%);
+  height: 100vh;
+
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container {
+  min-width: 1110px;
+}
+
+/* -- charts -- */
+
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: #006dba;
+
+}
+
+.donut-serie-0 {
+  fill: #808fa2;
+  background-color: #808fa2;
+}
+
+.donut-serie-1 {
+  fill: #006dba;
+  background-color: #006dba;
+}
+
+.donut-serie-2 {
+  fill: #16b6d5;
+  background-color: #16b6d5;
+}
+
+/* -- scroll-bars -- */
+
+.scroll-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #a5acbb;
+}
+
+.scroll-content::-webkit-scrollbar {
+  width: 8px;
+  background-color: #a5acbb;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #4b5158;
+}

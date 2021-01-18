@@ -1,0 +1,40 @@
+.chart {
+  width: 170px;
+  margin-top: 32px;
+  margin-left: 24px;
+}
+
+.label-outside-container {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  margin-top: 28px;
+  padding: 0;
+  position: relative;
+}
+
+.label-inside-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.label-color {
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.animate-opacity {
+  transition: opacity 1s;
+}

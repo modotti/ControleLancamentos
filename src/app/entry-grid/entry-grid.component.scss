@@ -1,0 +1,62 @@
+.row {
+  height: 40px;
+  line-height: 40px;
+}
+
+.table-container {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: calc(100vh - 516px);
+  min-height: 252px;
+  overflow: auto;
+}
+
+.table {
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  border: none;
+}
+
+.table td,
+.table th {
+  border: none;
+  text-transform: capitalize;
+}
+
+.tagged {
+  color: #fff;
+  background-color: #808fa2;
+  border-radius: 4px;
+  padding: 4px 8px 4px 8px;
+}
+
+.tag-color-0 {
+  background-color: #808fa2;
+}
+
+.tag-color-1 {
+  background-color: #006dba;
+}
+
+.tag-color-2 {
+  background-color: #16b6d5;
+}
+
+.line {
+  background-color: #edf1f5;
+  font-weight: 500
+}
+
+.line-pair {
+  background-color: #e2e7ef;
+}
+
+.sticked {
+  background-color: #c9d8ed;
+  position: sticky;
+  top: 0px;
+}

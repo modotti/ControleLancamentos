@@ -1,0 +1,67 @@
+<div class="head-container shadow">
+  <div class="container">
+    <div class="d-inline-block">
+      CONTROLE DE
+      <span style="font-weight: 800;">
+        LANÇAMENTOS
+      </span>
+    </div>
+    <div class="d-inline-block float-right">
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Junho/2016
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container position-relative">
+  <div class="resume-container row">
+    <div class="resume-chart-container col-9 shadow">
+      <div class="row">
+        <div class="col-7">
+          <span class="title m-0">Volume Diário</span>
+          <div class="chart-container">
+            <app-daily-chart [entryData]="entryData"></app-daily-chart>
+          </div>
+        </div>
+        <div class="col-5">
+          <span class="title m-0">Situação</span>
+          <div class="chart-container">
+            <app-pie-chart [entryData]="entryData"></app-pie-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 pr-0">
+      <div class="highlight-count shadow">
+        <span class="highlight-number">{{entryCount}}</span>
+        <br /> lançamentos
+      </div>
+      <div class="highlight-count shadow">
+        <span class="highlight-number">{{shipmentCount}}</span>
+        <br /> remessas
+      </div>
+    </div>
+  </div>
+
+  <div class="total-value shadow">
+    valor total
+    <span class="highlight-value">{{totalValue}}</span>
+  </div>
+
+  <div class="entry-grid-container row shadow p-0">
+    <div class="col-12 p-0">
+      <div class="title">
+        Lançamentos
+      </div>
+      <div>
+        <app-entry-grid [data]="entryData"></app-entry-grid>
+      </div>
+    </div>
+  </div>
+
+</div>

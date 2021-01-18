@@ -1,0 +1,32 @@
+<div class="container row p-0 m-0">
+
+  <div class="table-container scroll-content">
+    <table class="table table-sm">
+      <thead class="thead">
+        <tr>
+          <th class="sticked" scope="col">&nbsp;&nbsp;#</th>
+          <th class="sticked" scope="col">LANÇAMENTO</th>
+          <th class="sticked" scope="col">DESCRIÇÃO</th>
+          <th class="sticked" scope="col">NÚMERO</th>
+          <th class="sticked" scope="col">SITUAÇÃO</th>
+          <th class="sticked" scope="col">CONFIRMAÇÃO</th>
+          <th class="sticked" scope="col">DADOS BANCÁRIOS</th>
+          <th class="sticked" scope="col">VALOR FINAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of entryList, let i = index" class="line" [ngClass]="{ 'line-pair': i % 2 === 0 }">
+          <th scope="row">&nbsp;&nbsp;{{i+1}}</th>
+          <td>{{item.entryDate}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.eventNumber}}</td>
+          <td><span class="tagged {{getStatusTagClass(item.status)}}">{{item.status}}</span></td>
+          <td>{{item.confirmationDate}}</td>
+          <td>{{item.accountData}}</td>
+          <td>{{item.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
